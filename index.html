@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Assignment</title>
+  <link rel="stylesheet" href="https://ucertify.com/layout/themes/bootstrap4/ux/css/uc_global.css" />
+  <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/main_sass/main.css" />
+  <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.css" />
+  <link rel="canonical" href="https://www.ucertify.com/utils/?util=icomoon" />
+</head>
+
+<body>
+  <form action="#" id="boot-from" name="boot_form">
+    <div class="container">
+      <div class="row border-bottom">
+        <ul class="nav">
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link" href="#"><i class="icomoon-my-library-24px-1 s3 pr-1"></i>My Library</a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link" href="#"><i class=" icomoon-stack-plus s3 pr-1"></i>Enroll</a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link" href="#"><i class="icomoon-new-24px-envelop-2 s3 pr-1"></i>Inbox</a>
+          </li>
+          <li class="nav-item d-flex align-items-end">
+            <a class="nav-link" href="#"><i class="icomoon-my-profile-24px-1 s3 pr-1"></i>My Profile</a>
+          </li>
+          <li class="nav-item border-bottom border-primary d-flex align-items-end">
+            <a class="nav-link" href="#"><i class="icomoon-admin-24px-1 s3 pr-1"></i>Admin</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-2 px-0">
+          <div class="input-group ">
+            <input type="text" name="search" id="search" value="ucertify" class="form-control border-right-0 " />
+            <div class="input-group-append">
+              <button type="button" id="btn_exit" name="btn_exit"
+                class="btn border-bottom border-top form-control-clear">x</button>
+            </div>
+            <div class="input-group-append">
+              <button type="button" id="search_drop" name="search_drop"
+                class="btn dropdown-toggle border border-left-0 form-control-clear"></button>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group  col-md-5" role="group" aria-label="Basic outlined example">
+          <button type="button" id="roster" name="roster"
+            class="btn border-primary bg-light d-flex align-items-center ">
+            <i class="icomoon-roster-sm s3 mr-1"></i>Roster</button>
+          <button type="button" id="manage" name="manage"
+            class="btn border-primary  d-flex align-items-center dropdown-toggle ">
+            <i class="icomoon-24px-project-management s3 mr-1"></i> Manage</button>
+          <button type="button" id="report" name="report"
+            class="btn border-primary d-flex align-items-center dropdown-toggle">
+            <i class=" icomoon-reports-sm s3 mr-1"></i> Report</button>
+          <button type="button" id="enroll" name="enroll" class="btn border-primary d-flex align-items-center  ">
+            <i class="icomoon-add-license-enroll-sm mr-1"></i> Enroll</button>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-3 px-0 d-flex justify-content-end ">
+          <button type="button" id="lms_confi" name="lim_confi"
+            class="btn  d-flex align-items-center mr-3 btn-outline-primary">LMS Configuration</button>
+          <div class="btn-group">
+            <button type="button" id="export" name="export"
+              class="btn border-primary dropdown-toggle  d-flex align-items-center  ">
+              <i class="icomoon-file-download"></i>Export</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 d-flex px-0">
+          <div class="mr-1 d-flex">
+            <button type="button" id="search_btn" name="search_btn" class="btn border bg-light px-2">
+              <i class="icomoon-search-3 s3 mt-2"></i>
+            </button>
+          </div>
+          <div>
+            <div class="btn-group  col-md-4" role="group" aria-label="Basic outlined example">
+              <button type="button" id="roster_sec" name="roster_sec"
+                class="btn border-primary bg-light d-flex align-items-center ">
+                <i class="icomoon-roster-sm s3 mr-1"></i>Roster</button>
+              <button type="button" id="lessons" name="lessons" class="btn border-primary  d-flex align-items-center  ">
+                <i class="icomoon-lesson-sm s3 mr-1"></i> Lessons</button>
+              <button type="button" id="practice" name="practice" class="btn border-primary d-flex align-items-center">
+                <i class="icomoon-testprep-or-practice-test s3 mr-1"></i> Practice</button>
+              <button type="button" id="prepengine" name="prepengine"
+                class="btn border-primary d-flex align-items-center  dropdown-toggle ">
+                <i class=" icomoon-cogs mr-1"></i> Prepengine</button>
+              <button type="button" id="analytics" name="analytics"
+                class="btn border-primary d-flex align-items-center  dropdown-toggle ">
+                <i class="icomoon-bars mr-1"></i> Analytics</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <label class=" mr-2" for="switch_first">Test Mode Only</label>
+          <div class="custom-control custom-switch d-flex">
+            <label class="custom-control-label" for="switch_first"></label>
+            <!-- <input type="checkbox" class="custom-control-label d-flex-center" id="switch_first" name="switch_first" /> -->
+          </div>
+        </div>
+      </div>
+      <div class="row my-2">
+        <table class="table table-responsive-xl">
+          <thead>
+            <tr>
+              <!-- <div class="">
+                <input type="checkbox" id="head_checkbox" name="head_checkbox" class="mr-1 form-control justify-content-start w-60 "
+                disabled />
+                <label for="head_select" class=" w-25 ">
+                  <select id="head_select" name="head_select" class=" border ">
+                  </select>
+                </label>
+              </div> -->
+              <th>
+                <input type="checkbox" id="head_checkbox" name="head_checkbox" class="custom-control" disabled />
+
+              </th>
+              <th>
+                <!-- <label for="head_select" class=""> -->
+                <select id="head_select" name="head_select" class="">
+                </select>
+                <!-- </label> -->
+              </th>
+              <th style="width: 20%;" class="dropup">
+                <p class="pb-0 mb-0">Student Name</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="tag_status" name="tag_status" type="button" class="btn dropdown-toggle p-0">
+                  <small>Tag/Status</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th class="dropup" style="width: 27%;">
+                <p class="pb-0 mb-0">Course Name</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="crn_course" name="crn_course" type="button" class="btn d-block dropdown-toggle p-0">
+                  <small>CRN/Course Status</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th class="dropup">
+                <p class="pb-0 mb-0 ">Instructor</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="section" name="section" type="button" class="btn d-block dropdown-toggle p-0">
+                  <small>Section</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th class="pl-4 dropup">
+                <p class="pb-0 mb-0">Readiness</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="readiness" name="readiness" type="button" class="btn d-block dropdown-toggle p-0">
+                </button>
+                <!-- </div> -->
+              </th>
+              <th class="pl-0 ml-0 dropup">
+                <p class="pb-0 mb-0">Start</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="time_passed" name="time_passed" type="button" class="btn d-block dropdown-toggle p-0">
+                  <small>Time Passed</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th class="dropup">
+                <p class="pb-0 mb-0">Target</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="time_needed" name="time_needed" type="button" class="btn d-block dropdown-toggle p-0">
+                  <small>Time Needed</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th>
+                <p class="pb-0 mb-0">Estimated</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="time_required" name="time_required" type="button" class="btn d-block dropdown-toggle p-0">
+                  <small>Time Required</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th class="dropup">
+                <p class="pb-0 mb-0">Last Login</p>
+                <!-- <div class="btn-group dropup"> -->
+                <button id="time_passes" name="time_passes" type="button" class="btn d-block dropdown-toggle p-0">
+                  <small>Time Passed</small>
+                </button>
+                <!-- </div> -->
+              </th>
+              <th>
+                <p>Action</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="opacity: 0.5;">
+              <!-- <td class="pt-4">
+                <div class="d-flex">
+                  <input class="form-control w-50" type="checkbox" id="first_index" />
+                  <label class="form-control-label font13 pt-2 pl-1" for="first_index">1</label>
+                </div>
+              </td> -->
+              <td >
+                <input type="checkbox" id="first_checkbox" name="first_checkbox" class=" p-50 d-flex-center " disabled />
+              </td>
+              <td>
+                <label for="head_select" class="d-flex-center">1
+                </label>
+              </td>
+              <td class="pt-3 pl-4">
+                <div class="row d-flex">
+                  <div class="col-3 bg-success p-r-xl border p-2 rounded-circle"><strong
+                      style="color: white;">AK</strong></div>
+                  <div class="col-8 text-truncate ">Abhishek Ku...</div>
+                </div>
+              </td>
+              <td>
+                <p class="mb-0">App-Training</p>
+                <small class="text-muted">app-training</small>
+                <div class="ml-2">
+                  <i class="  icomoon-lesson-sm text-success"></i>
+                  <i class="  icomoon-test-44px text-success"></i>
+                </div>
+              </td>
+              <td class="pt-3">
+                <p class="mb-0 text-align-center d-flex">Dhiroo Verma</p>
+                <small class="badge badge-primary">new</small>
+              </td>
+              <td class="pl-4 ml-2">
+                <center>
+                  <canvas width="80" height="40" id="canvas_item"></canvas>
+                  <p class="pl-4">58%</p>
+                </center>
+              </td>
+              <td>
+                24-APR-19
+                <p class="font11">2.1 years</p>
+              </td>
+              <td>
+                25-JUN-19
+                <p class="font11">NA</p>
+              </td>
+              <td>
+                12-JAN-23
+                <p class="font11">1.6 years</p>
+              </td>
+              <td>
+                <span class="text-danger">21-FEB-19</span>
+                <p class="font11">2.3 years ago</p>
+              </td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" id="setting_one" name="setting_one"
+                    class="btn border-primary  border-right-0 pr-2">
+                    <i class=" icomoon-24px-settings s3"></i>
+                  </button>
+                  <button type="button" id="setting_drop" name="settinf_drop"
+                    class="btn border-primary  border-left-0 dropdown-toggle p1-0" data-toggel="dropdown">
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <!-- <td class="pt-4"> -->
+              <!-- <div class="d-flex">
+                  <input class="form-control w-50" type="checkbox" id="second_index" />
+                  <label class="form-control-label font13 pt-2 pl-1" for="second_index">2</label>
+                </div> -->
+              <td>
+                <input type="checkbox" id="second_checkbox" name="second_checkbox" class="p-50 d-flex-center" />
+              </td>
+              <td>
+                <label for="head_select" class=" d-flex-center">2
+                </label>
+              </td>
+              </td>
+              <td class="pt-3 pl-4">
+                <div class="row d-flex align-items-center">
+                  <div class="col-3 bg-success p-r-xl p-2 border rounded-circle"><strong
+                      style="color: white;">AP</strong></div>
+                  <div class="col-8 text-truncate">Abhishek Pan...</div>
+                </div>
+              </td>
+              <td>
+                <p class="mb-0">App-Training</p>
+                <small class="text-muted">app-training</small>
+                <div class="ml-2">
+                  <i class="  icomoon-lesson-sm text-success"></i>
+                  <i class="  icomoon-test-44px text-success"></i>
+                </div>
+              </td>
+              <td class="pt-3">
+                <p class="mb-0 text-align-center d-flex">Swati Kesharwani</p>
+                <small class="badge badge-primary">Merged Sambhunath Ap</small>
+              </td>
+              <td class="pl-4 ml-2">
+                <center>
+                  <canvas width="80" height="40" id="my_canvas"></canvas>
+                  <p class="pl-4">64%</p>
+                </center>
+              </td>
+              <td>
+                18-FEB-17
+                <p class="font11">4.3 years</p>
+              </td>
+              <td>
+                18-JUN-17
+                <p class="font11">NA</p>
+              </td>
+              <td>
+                03-DEC-23
+                <p class="font11">2.5 years</p>
+              </td>
+              <td>
+                <span class="text-danger">14-MAY-17</span>
+                <p class="font11">4.1 years ago</p>
+              </td>
+              <td>
+                <div class="btn-group">
+                  <button type="button" id="setting_two" name="setting_two"
+                    class="btn border-primary  border-right-0 pr-2">
+                    <i class=" icomoon-24px-settings s3"></i>
+                  </button>
+                  <button type="button" id="setting_drop_two" name="setting_drop_two"
+                    class="btn border-primary  border-left-0 dropdown-toggle p1-0" data-toggel="dropdown">
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </form>
+</body>
+<script>
+  let canvas = document.getElementById("my_canvas");
+  let ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(50, 30, 10, 1.5 * Math.PI, 0.89 * Math.PI, 0);
+
+  ctx.fillStyle = "green";
+  ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(50, 30);
+  ctx.lineTo(22, 48)
+  ctx.lineTo(50, 0)
+  ctx.lineTo(50, 30)
+  ctx.closePath();
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+
+  let canvas1 = document.getElementById("canvas_item");
+  let ctx1 = canvas1.getContext("2d");
+  ctx1.beginPath();
+  ctx1.arc(50, 30, 10, 1.5 * Math.PI, 0.71 * Math.PI, 0);
+
+  ctx1.fillStyle = "green";
+  ctx1.fill();
+  ctx1.beginPath();
+  ctx1.moveTo(50, 30);
+  ctx1.lineTo(29, 61)
+  ctx1.lineTo(50, 0)
+  ctx1.lineTo(50, 30)
+  ctx1.closePath();
+  ctx1.fillStyle = "white";
+  ctx1.fill();
+
+
+</script>
+
+</html>
