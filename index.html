@@ -78,7 +78,7 @@
       <div class="row">
         <div class="col-6 d-flex px-0">
           <div class="mr-0 d-flex">
-            <button type="button" id="search_btn" name="search_btn" class="btn border bg-light px-2 form-control">
+            <button type="button" id="search_btn" name="search_btn" class="btn border bg-light px-3 form-control">
               <i class="icomoon-search-3 s3 d-flex "></i>
             </button>
           </div>
@@ -178,13 +178,15 @@
               <td class="pt-4">
                 <div class="d-flex">
                   <input class=" mr-1 mt-1" type="checkbox" id="first_index" />
+                  <!-- <span class=" mr-1 mt-1 border border-secondary px-2 py-0 d-flex"  id="second_index"></span> -->
+
                   <label class=" font13 " for="first_index">1</label>
                 </div>
               </td>
               <td>
                 <div class=" d-flex">
-                  <div class=" p-3 bg-success border rounded-circle"><strong style="color: white;">AK</strong></div>
-                  <div class="text-truncate ml-1 mt-3">Abhishek Ku...</div>
+                  <div class=" p-2 bg-success border rounded-circle"><strong style="color: white;">AK</strong></div>
+                  <div class="text-truncate ml-1 mt-2">Abhishek Ku...</div>
                 </div>
               </td>
               <td>
@@ -198,10 +200,11 @@
               <td class="pt-3">
                 <p class="mb-0 text-align-center d-flex">Dhiroo Verma</p>
                 <small class="badge badge-primary">new</small>
-              </td>
-              <td class="p-0 m-0">
-                <div class="circle_one"></div>
-                <p class="pl-5"> 58%</p>
+              <td class="pl-4 ml-2">
+                <center>
+                  <canvas width="80" height="40" id="canvas-one"></canvas>
+                  <p class="pl-4">58%</p>
+                </center>
               </td>
               <td>
                 24-APR-19
@@ -234,14 +237,14 @@
             <tr>
               <td class="pt-4">
                 <div class="d-flex">
-                  <input class=" mr-1 mt-1" type="checkbox" id="second_index" />
+                  <input class=" mr-1 mt-1" type="checkbox" id="first_index" />
                   <label class=" font13 " for="second_index">2</label>
                 </div>
               </td>
               <td>
                 <div class=" d-flex">
-                  <div class="   p-3 bg-success border rounded-circle"><strong style="color: white;">AP</strong></div>
-                  <div class="text-truncate ml-1 mt-3">Abhishek Pan...</div>
+                  <div class=" p-2 bg-success border  rounded-circle"><strong style="color: white;">AP</strong></div>
+                  <div class="text-truncate ml-1 mt-2">Abhishek Pan...</div>
                 </div>
               </td>
               <td>
@@ -256,9 +259,11 @@
                 <p class="mb-0 text-align-center d-flex">Swati Kesharwani</p>
                 <small class="badge badge-primary">Merged Sambhunath Ap</small>
               </td>
-              <td class="p-0 m-0">
-                <div class="circle_two"></div>
-                <p class="pl-5"> 64%</p>
+              <td class="pl-4 ml-2">
+                <center>
+                  <canvas width="80" height="40" id="canvas-two"></canvas>
+                  <p class="pl-4">64%</p>
+                </center>
               </td>
               <td>
                 18-FEB-17
@@ -295,28 +300,38 @@
   </form>
 </body>
 
-<style>
-  .circle_one {
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image:
-      linear-gradient(270deg, green 50%, transparent 50%),
-      linear-gradient(300deg, green 50%, transparent 50%), linear-gradient(90deg, gainsboro 50%, transparent 50%);
-  }
+<script>
 
-  .circle_two {
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image:
-      linear-gradient(270deg, green 50%, transparent 50%),
-      linear-gradient(315deg, green 50%, transparent 50%), linear-gradient(90deg, gainsboro 50%, transparent 50%);
-  }
-</style>
+  let canvas1 = document.getElementById("canvas-one");
+  let ctx1 = canvas1.getContext("2d");
+  ctx1.beginPath();
+  ctx1.arc(50, 30, 10, 1.5 * Math.PI, 0.71 * Math.PI, 0);
+  ctx1.fillStyle = "green";
+  ctx1.fill();
+  ctx1.beginPath();
+  ctx1.moveTo(50, 30);
+  ctx1.lineTo(29, 61)
+  ctx1.lineTo(50, 0)
+  ctx1.lineTo(50, 30)
+  ctx1.closePath();
+  ctx1.fillStyle = "white";
+  ctx1.fill();
+
+  let canvas = document.getElementById("canvas-two");
+  let ctx = canvas.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(50, 30, 10, 1.5 * Math.PI, 0.89 * Math.PI, 0);
+  ctx.fillStyle = "green";
+  ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(50, 30);
+  ctx.lineTo(22, 48)
+  ctx.lineTo(50, 0)
+  ctx.lineTo(50, 30)
+  ctx.closePath();
+  ctx.fillStyle = "white";
+  ctx.fill();
+
+</script>
 
 </html>
