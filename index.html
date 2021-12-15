@@ -184,8 +184,15 @@
                                 <small class="badge badge-primary">new</small>
                             <td class="pl-4 ml-2">
                                 <center>
-                                    <canvas width="80" height="40" id="canvas_one"></canvas>
-                                    <p class="pl-3">58%</p>
+                                    <svg height="50" width="50" viewBox="0 0 40 40">
+                                        <circle r="10" cx="10" cy="10" fill="lightgrey" />
+                                        <circle r="5" cx="10" cy="10" fill="transparent"
+                                                stroke="green"
+                                                stroke-width="10"
+                                                stroke-dasharray="calc(56 * 31.4 / 100) 31.4"
+                                                transform="rotate(-90) translate(-20)" />
+                                    </svg>
+                                    <p class="pr-3">58%</p>
                                 </center>
                             </td>
                             <td>
@@ -241,8 +248,15 @@
                             </td>
                             <td class="pl-4 ml-2">
                                 <center>
-                                    <canvas width="80" height="40" id="canvas_two"></canvas>
-                                    <p class="pl-3">64%</p>
+                                    <svg height="50" width="50" viewBox="0 0 40 40">
+                                        <circle r="10" cx="10" cy="10" fill="lightgrey" />
+                                        <circle r="5" cx="10" cy="10" fill="transparent"
+                                                stroke="green"
+                                                stroke-width="10"
+                                                stroke-dasharray="calc(64 * 31.4 / 100) 31.4"
+                                                transform="rotate(-90) translate(-20)" />
+                                    </svg>
+                                    <p class="pr-3">64%</p>
                                 </center>
                             </td>
                             <td>
@@ -276,38 +290,6 @@
             </div>
         </div>
     </form>
-    <script>
-    function pie(ctx, w, h, datalist) {
-    let radius = 12;
-    let centerx = w / 2;
-    let centery = h / 2;
-    let total = 0;
-    for (x = 0; x < datalist.length; x++) { total += datalist[x]; };
-    let lastend = 0;
-    let offset = Math.PI / 2;
-    for (x = 0; x < datalist.length; x++) {
-    let thispart = datalist[x];
-    ctx.beginPath();
-    ctx.fillStyle = colist[x];
-    ctx.moveTo(centerx, centery);
-    let arcsector = Math.PI * (2 * thispart / total);
-    ctx.arc(centerx, centery, radius, lastend - offset, lastend + arcsector - offset, false);
-    ctx.lineTo(centerx, centery);
-    ctx.fill();
-    ctx.closePath();
-    lastend += arcsector;
-    }
-    }
-    let datalist1 = new Array(58, 100 - 58);
-    let datalist2 = new Array(64, 100 - 64);
-    let colist = new Array('green', 'lightgrey');
-    let canvas1 = document.getElementById("canvas_one");
-    let canvas2 = document.getElementById("canvas_two");
-    let ctx1 = canvas1.getContext('2d');
-    let ctx2 = canvas2.getContext('2d');
-    pie(ctx1, canvas1.width, canvas1.height, datalist1);
-    pie(ctx2, canvas2.width, canvas2.height, datalist2);
-    </script>
 </body>
 
 </html>
